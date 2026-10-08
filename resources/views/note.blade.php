@@ -1,0 +1,1 @@
+{{-- Category table jonno ki aram category migrations file create korobo .. command "php artisan make:model Category -m" --}}
