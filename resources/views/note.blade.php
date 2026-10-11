@@ -13,3 +13,6 @@ be installed using Composer: "composer require laravel/ui"
 step 02 : you may install the frontend scaffolding using the ui Artisan command: "php artisan ui bootstrap --auth"
 
 step 03: "npm install && npm run dev"
+
+
+{{-- আপনার তৈরি করা AdminSeeder টি ডাটাবেজে রান করার জন্য টার্মিনালে নিচের কমান্ডটি দিন : php artisan make:seeder AdminSeeder --}}
