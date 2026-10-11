@@ -22,3 +22,6 @@ step 03: "npm install && npm run dev"
 {{-- database fresh migration run korchhen : php artisan migrate:fresh --}}
 
 {{-- run hoye data database-e insert hoyeche.:  --}}
+
+
+{{-- এই কমান্ডটির মাধ্যমে আপনি আপনার লারাভেল প্রজেক্টে Admin ফোল্ডারের ভেতরে AdminDashboardController.php নামের কন্ট্রোলারটি সফলভাবে তৈরি করেছেন। php artisan make:controller Admin/AdminDashboardController --}}
