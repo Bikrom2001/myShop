@@ -16,3 +16,9 @@ step 03: "npm install && npm run dev"
 
 
 {{-- আপনার তৈরি করা AdminSeeder টি ডাটাবেজে রান করার জন্য টার্মিনালে নিচের কমান্ডটি দিন : php artisan make:seeder AdminSeeder --}}
+
+{{-- আপনার তৈরি করা UserSeeder টি ডাটাবেজে রান করার জন্য টার্মিনালে নিচের কমান্ডটি দিন : php artisan make:seeder UserSeeder  --}}
+
+{{-- database fresh migration run korchhen : php artisan migrate:fresh --}}
+
+{{-- run hoye data database-e insert hoyeche.:  --}}
