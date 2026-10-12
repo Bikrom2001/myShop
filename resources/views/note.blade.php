@@ -30,3 +30,4 @@ step 03: "npm install && npm run dev"
 {{-- Class 33  is start this files --}}
 
 {{-- SubCategory মডেল এবং এর সাথে একটি মাইগ্রেশন ফাইল (create_sub_categories_table) সফলভাবে তৈরি করেছেন। " php artisan make:model SubCategory -m " --}}
+
