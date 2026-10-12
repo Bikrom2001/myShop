@@ -31,3 +31,5 @@ step 03: "npm install && npm run dev"
 
 {{-- SubCategory মডেল এবং এর সাথে একটি মাইগ্রেশন ফাইল (create_sub_categories_table) সফলভাবে তৈরি করেছেন। " php artisan make:model SubCategory -m " --}}
 
+
+{{-- এই কমান্ডটির মাধ্যমে আপনি আপনার লারাভেল প্রজেক্টে Brand মডেল এবং এর সাথে একটি মাইগ্রেশন ফাইল সফলভাবে তৈরি করেছেন। "php artisan make:model Brand -m" --}}
