@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('order_items', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('order_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->foreignId('product_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->integer('quantity');
+            $table->float('price');
+            $table->float('total_price');
             $table->timestamps();
         });
     }
@@ -22,6 +31,11 @@ return new class extends Migration
      */
     public function down(): void
     {
+        // drop foreign key
+        Schema::table('order_items', function (Blueprint $table) {
+            $table->dropForeign(['order_id']);
+            $table->dropForeign(['product_id']);
+        });
         Schema::dropIfExists('order_items');
     }
 };
