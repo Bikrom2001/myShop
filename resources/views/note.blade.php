@@ -44,3 +44,12 @@ step 03: "npm install && npm run dev"
 
 
 {{-- এই কমান্ডটির মাধ্যমে আপনি আপনার লারাভেল প্রজেক্টে OrderItem মডেল এবং এর সাথে একটি মাইগ্রেশন ফাইল (create_order_items_table) সফলভাবে তৈরি করেছেন। " php artisan make:model OrderItem -m " --}}
+
+{{-- 
+
+"php artisan migrate" কমান্ডটি রান করার
+
+টার্মিনালে নিচের কমান্ডটি দিয়ে মাইগ্রেশন পুনরায় রান করুন:
+"php artisan migrate:fresh --seed"
+
+--}}

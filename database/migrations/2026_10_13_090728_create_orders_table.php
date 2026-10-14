@@ -18,7 +18,7 @@ return new class extends Migration
                 ->cascadeOnDelete();
             $table->integer('quantity');
             $table->float('total_price');
-            $table->enum('status', ['Pending', 'Confirmed', 'Processing', 'Shipped', 'Out for Delivery', 'Delivered', 'Cancelled'])->default('status');
+            $table->enum('status', ['Pending', 'Confirmed', 'Processing', 'Shipped', 'Out for Delivery', 'Delivered', 'Cancelled'])->default('Pending');
             $table->timestamps();
         });
     }
