@@ -16,9 +16,6 @@ return new class extends Migration
             $table->foreignId('user_id')
                 ->constrained()
                 ->cascadeOnDelete();
-            $table->foreignId('product_id')
-                ->constrained()
-                ->cascadeOnDelete();
             $table->integer('quantity');
             $table->float('total_price');
             $table->enum('status', ['Pending', 'Confirmed', 'Processing', 'Shipped', 'Out for Delivery', 'Delivered', 'Cancelled'])->default('status');
@@ -35,7 +32,6 @@ return new class extends Migration
         // drop foreign key
         Schema::table('orders', function (Blueprint $table) {
             $table->dropForeign(['user_id']);
-            $table->dropForeign(['product_id']);
         });
         Schema::dropIfExists('orders');
     }
