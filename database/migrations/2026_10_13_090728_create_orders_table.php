@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->foreignId('product_id')
+                ->constrained()
+                ->cascadeOnDelete();
+            $table->integer('quantity');
+            $table->float('total_price');
+            $table->enum('status', ['Pending', 'Confirmed', 'Processing', 'Shipped', 'Out for Delivery', 'Delivered', 'Cancelled'])->default('status');
             $table->timestamps();
         });
     }
@@ -22,6 +31,12 @@ return new class extends Migration
      */
     public function down(): void
     {
+
+        // drop foreign key
+        Schema::table('orders', function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+            $table->dropForeign(['product_id']);
+        });
         Schema::dropIfExists('orders');
     }
 };
